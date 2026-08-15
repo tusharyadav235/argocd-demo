@@ -4,7 +4,7 @@ metadata:
   name: online-shop-app
   namespace: argocd
 spec:
-  project: default
+  project: frontend-app
   source:
     repoURL: https://github.com/tusharyadav235/argocd-demo.git     # Replace it with your forked repo
     targetRevision: main
