@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: online-shop-app
+  name: online-shop-app-2
   namespace: argocd
 spec:
   project: frontend-team
