@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-    name: frontend-team  
+    name: prod-team  
     namespace: argocd
 
 spec:
@@ -10,7 +10,7 @@ spec:
   sourceRepos:
       - https://github.com/tusharyadav235/argocd-demo.git 
   destinations:
-      - namespace: frontend
+      - namespace: default
         server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
      - group: "*"
@@ -19,8 +19,8 @@ spec:
      - group: "*"
        kind: "*"
   roles:                       # Define roles for RBAC within this Project
-    - name: frontend-admins    # Role name  
-      description: Admins for frontend team
+    - name: prod-admins    # Role name  
+      description: Admins for prod team
       policies:               
-        - p, proj:frontend-team:frontend-admins, applications, *, frontend-team/*, allow      
+        - p, proj:prod-team:prod-admins, applications, *, prod-team/*, allow      
 
