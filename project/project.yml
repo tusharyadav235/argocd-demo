@@ -11,7 +11,7 @@ spec:
       - https://github.com/tusharyadav235/argocd-demo.git 
   destinations:
       - namespace: frontend
-        server: https://172.31.36.135:33893 
+        server: https://kubernetes.default.svc 
   clusterResourceWhitelist:
      - group: "*"
        kind: "*"
