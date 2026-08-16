@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/LondheShubham153/argocd-demos.git # Repo containing child apps(that you have forked and cloned earlier)
+    repoURL: https://github.com/tusharyadav235/argocd-demos.git # Repo containing child apps(that you have forked and cloned earlier)
     targetRevision: main
     path: cli_approach/apache    # path of Apache app in `argocd-demos` repo
   destination:
